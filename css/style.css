@@ -1,0 +1,1422 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+
+
+body {
+   font-family: "Noto Sans JP", sans-serif;
+   color: #4F4A4A;
+ }
+
+.nav-desktop {
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   background-color: white;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 9999;
+   /* padding: 20px 100px; */
+
+}
+ul {
+   display: flex;
+   justify-content: flex-end;
+   padding: 40px 0px;
+}
+
+li {
+   list-style-type: none;
+   font-weight: lighter;
+   padding: 0px 50px;
+} 
+
+li a {
+ text-decoration: none;
+}
+
+li:hover {
+ color: #2A9051;
+ font-weight: bold;      
+}
+
+li a:hover {
+ color: #2A9051;
+ font-weight: bold;      
+}
+
+.nav-li-download a{
+   font-weight: bold;
+   text-decoration: underline;
+   color: #2A9051;
+}
+
+.nav-logo {
+   width: 150px;
+   padding: 30px 0px 0px 30px;
+}
+
+.nav-search{
+   width: 20px;
+   height: 20px;
+}
+
+
+img {
+   width: 100px;
+}
+
+.nav-mobile {
+   display: none;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 9999;
+   background-color: white;
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+   background-color: white;   
+   background-size: 350%;
+    background-repeat: no-repeat;
+
+    overflow-x: hidden; 
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+  }
+  
+  .overlay a {
+    padding: 3px;
+    font-size: 3.1em;
+    font-weight: lighter;
+    text-decoration: none;
+    color: white;
+    display: block; 
+    transition: 0.3s; 
+    color: #2A9051;
+  }
+  
+  .overlay a:hover {
+    color: #4F4A4A;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+
+
+
+
+/***************************************************************************/
+ 
+.hero-content {
+   /* background-color: lightblue; */
+   height: 100vh;
+   background-image: linear-gradient(to bottom, rgba(105, 156, 125, 0.719), rgba(74, 83, 78, 0.719)), url('/images/fern.jpg');
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   /* padding: 50px 0px; */
+
+}
+
+.hero-content-text {
+   padding-top: 22%;
+}
+
+.hero-content-text, .hero-img {
+   margin: 0px 100px ;
+}
+
+.hero-img {
+   width: 20%;
+   padding-top: 10%;
+}
+
+.hero-img img {
+   width: 100%;
+}
+
+.hero-content-text {
+   color: white;
+}
+
+.hero-content-text h1{
+   font-size: 3em;
+   font-weight: 300;
+   padding-bottom: 30px;
+
+}
+
+.hero-content-text h3 {
+   font-size: 1.7em;
+   font-weight: 100;
+   padding-bottom: 20px;
+}
+
+.hero-content-text p {
+   font-size: 1.1em;
+   font-weight: 100;
+}
+
+.hero-buttons{
+   display: flex;
+   justify-content: center;
+   padding-top: 50px;
+}
+
+.hero-buttons div {
+margin: 0px 50px;
+}
+
+.hero-buttons a {
+   background-color: #2A9051;
+   color: white;
+   text-decoration: none;
+   padding: 13px 40px;
+   font-size: 1.2em;
+   font-weight: lighter;
+}
+
+.hero-buttons a:hover {
+   background-color: #4F4A4A;
+}
+
+
+/***************************************************************************/
+
+.features {
+   background-color: #f6f6f6;
+   text-align: center;
+   height: 90vh;
+}
+
+.features h1 {
+   padding-top: 6%;
+   /* color: white; */
+   font-size: 3em;
+   font-weight: lighter;
+   padding-bottom: 40px;
+}
+
+.features h2 {
+   padding-top: 30px;
+   /* color: white; */
+   font-size: 2em;
+   font-weight: lighter;
+}
+
+.features p {
+font-size: .8em;
+font-weight: lighter;
+padding-top: 20px;
+
+}
+
+.features-content {
+   display: flex;
+   justify-content: center;
+   margin: 100px;
+}
+
+.features-content div {
+   margin: 0px 50px;
+}
+
+.features-security, .features-notifications, .features-control {
+   background-color: white;
+   padding: 70px;
+   width: 20%;
+}
+
+
+
+/***************************************************************************/
+
+
+.product {
+   background-color: #ebebeb;
+   text-align: center;
+   height: 100vh;
+}
+
+.product h1 {
+   padding-top: 6%;
+   font-size: 3em;
+   font-weight: lighter;
+   padding-bottom: 10px;
+
+}
+
+.product p {
+   font-size: 1.3em;
+   font-weight: 100;
+   text-align: center;
+   padding-bottom: 40px;
+   padding-top: 30px;
+
+}
+
+
+.product h4 {
+   font-size: 1.3em;
+   font-weight: 100;
+   /* padding: 0px 70px; */
+   padding-top: 20px;
+   /* padding-bottom: 60px; */
+   text-align: center;
+}
+
+.product-content {
+   display: flex;
+   justify-content: center;
+   margin: 85px;
+}
+
+.product-content div {
+   margin: 0px 50px;
+
+}
+
+.product-camera, .product-securitylights, .product-doorbell {
+   background-color: white;
+   padding: 50px;
+}
+
+.product-camera p, .product-securitylights p, .product-doorbell p {
+font-size: 1em;
+font-weight: 400;
+text-align: center;
+padding-bottom: 40px;
+padding-top: 30px;
+}
+
+.product-camera img {
+   width: 120px;
+   padding-bottom: 10px;
+}
+
+.product-securitylights img {
+   width: 170px;
+   padding-bottom: 10px;
+}
+
+.product-doorbell img {
+   width: 90px;
+   padding-bottom: 10px;
+}
+
+.product-camera p {
+   padding-bottom: 68px;
+}
+
+.product a {
+      background-color: #2A9051;
+      color: white;
+      text-decoration: none;
+      padding: 9px 40px;
+      font-size: .8em;
+      font-weight: lighter;
+      box-shadow: 5px 8px 6px -6px #4F4A4A;
+
+}
+
+.product  a:hover {
+   background-color: #4F4A4A;
+}
+
+
+
+
+
+
+/***************************************************************************/
+
+.app {
+   background-color: #f6f6f6;
+   height: 90vh;
+   text-align: center;
+}
+
+.app-content {
+   display: flex;
+   justify-content: center;
+}
+
+.mockup {
+   width: 35%;
+   padding-top: 7%;
+}
+
+.mockup img {
+   width: 100%;
+   
+}
+
+.app-text {
+   padding-top: 11%;
+}
+
+.app-text, .mockup {
+   margin: 0px 70px ;
+}
+
+.app h1 {
+   padding-top: 6%;
+   font-size: 3em;
+   font-weight: lighter;
+   padding-bottom: 30px;
+}
+
+.app h3 {
+   font-size: 1.7em;
+   font-weight: 100;
+   padding-bottom: 20px;
+}
+
+.app p {
+   font-size: 1.1em;
+   font-weight: 100;
+   padding-bottom: 30px;
+
+}
+
+.app-buttons {
+   padding: 20px;
+}
+
+.app-buttons-google {
+   width: 20%;
+}
+
+.app-buttons-apple {
+   width: 16%;
+   padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************************************************/
+
+.subscription {
+      background-color: #ebebeb;
+      height: 100vh;
+      text-align: center;
+}
+
+.subscription-content {
+   display: flex;
+   justify-content: center;
+}
+
+.subscription-smart, .subscription-premiere, .subscription-elite {
+   margin: 40px 70px ;
+   background-color: white;
+   padding: 50px 100px;
+}
+
+.subscription h1 {
+   /* text-align: center; */
+   padding-top: 6%;
+   font-size: 3em;
+   font-weight: lighter;
+   padding-bottom: 40px;
+}
+
+.subscription h4 {
+   font-size: 1.3em;
+   font-weight: 100;
+   padding: 0px 70px;
+   padding-bottom: 60px;
+   /* padding-bottom: 60px; */
+   text-align: center;
+}
+
+.subscription h2 {
+   font-size: 1em;
+   font-weight: lighter;
+}
+
+
+.subscription-smart h2,
+.subscription-premiere h2,
+.subscription-elite h2 {
+    font-size: 2em;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.subscription-smart h3,
+.subscription-premiere h3,
+.subscription-elite h3 {
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    font-weight: lighter;
+}
+
+.subscription-smart h5,
+.subscription-premiere h5,
+.subscription-elite h5 {
+    font-size: .9em;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.subscription-smart h6,
+.subscription-premiere h6,
+.subscription-elite h6 {
+    font-size: .9em;
+    padding-bottom: 20px;
+}
+
+.subscription-premiere p,
+.subscription-elite p {
+    text-align: center;
+    font-size: .8em;
+    font-weight: lighter;
+    line-height: 2;
+    padding-bottom: 30px;
+
+}
+
+.subscription-smart p {
+    text-align: center;
+    font-size: .8em;
+    font-weight: lighter;
+    line-height: 2;
+    padding-bottom: 50px;
+
+}
+
+.subscription a:hover {
+   background-color: #4F4A4A;
+}
+
+.subscription a {
+   background-color: #2A9051;
+   color: white;
+   text-decoration: none;
+   /* margin-top: 20px; */
+   padding: 9px 40px;
+   font-size: 1em;
+   font-weight: lighter;
+   box-shadow: 5px 8px 6px -6px #4F4A4A;
+}
+
+
+
+
+
+
+/***************************************************************************/
+
+.support {
+   background-color: #f6f6f6;
+   height: 100vh;
+   text-align: center;
+
+}
+
+/* .support-content {
+   display: flex;
+   justify-content: center;
+} */
+
+.support h1 {
+   padding-top: 6%;
+   font-size: 3em;
+   font-weight: lighter;
+   /* margin: */
+   padding-bottom: 40px;
+}
+
+.support p {
+   font-size: 1.3em;
+   font-weight: 100;
+   /* padding-bottom: 60px;  */
+  padding: 0px 30px 60px 30px;
+
+}
+
+.support-aspects {
+   display: flex;
+   justify-content: center;
+   
+}
+
+.support-aspects div {
+   margin: 40px 70px ;
+   width: 20%;
+   background-color: white;
+   /* padding: 50px 100px; */
+   padding: 40px;
+}
+
+.support-demos img {
+   width: 80%;
+   padding-top: 30px;
+}
+
+.support .fas {
+   font-size: 80px;
+   position: absolute;
+   padding: 110px 80px;
+   color: #2A9051;
+   opacity: 1;
+}
+
+
+.support-links {
+   display: flex;
+   justify-content: center;
+   padding-top: 60px;
+}
+
+.support-links-centers {
+   padding-left: 100px;
+   /* padding-top: 20px; */
+}
+
+.support-links-centers a {
+   padding-left: 30px;
+}
+
+.support-headings {
+   padding: 20px 300px;
+}
+
+   .support-headings {
+       display: flex;
+       justify-content: space-around;
+       padding-bottom: 20px;
+       font-weight: 300;
+       font-size: 1.2em;
+   }
+
+   .support-faq {
+      text-align: center;
+   }
+
+   .support-faq h3 {
+       font-size: 1.2em;
+       font-weight: 300;
+       padding-bottom: 10px;
+       padding-top: 30px;
+       
+   }
+
+   .support-faq h4 {
+       font-weight: 100;
+       margin-bottom: 35px; 
+       padding-bottom: 10px;
+
+   }
+
+   .support-aspects a:hover {
+      background-color: #4F4A4A;
+  }
+ 
+  .support-aspects a {
+          background-color: #2A9051;
+          color: white;
+          text-decoration: none;
+          padding: 9px 40px;
+          font-size: 1em;
+          font-weight: lighter;
+          text-align: center;
+      box-shadow: 5px 8px 6px -6px #4F4A4A;
+
+      }
+  
+
+
+/***************************************************************************/
+
+
+
+footer {
+   background-size: 100%;
+   background-image: linear-gradient(to bottom, rgba(105, 156, 125, 0.719), rgba(74, 83, 78, 0.719)), url('/images/fern.jpg');
+}
+
+   footer  {
+       display: flex;
+       justify-content: space-between;
+       padding: 20px;
+
+   }
+
+   footer p {
+       color: white;
+       padding-top: 20px;
+   }
+
+
+
+   .footer-content-icons {
+       display: flex;
+       justify-content: flex-end;
+       padding-top: 10px;
+       /* width: 20%; */
+   }
+
+   .icon {
+      width: 10%;
+      padding: 0px 10px;
+   }
+
+   .icon img {
+      width: 100%;
+   }
+
+
+
+
+
+
+
+
+
+
+/***************************************************************************/
+
+@media only screen and (max-width: 1100px) {
+   .nav-mobile {
+      display: block;
+   }
+
+   .nav-desktop{
+      display: none;
+   }
+
+   span {
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+    
+  }
+
+  .fas {
+      font-size: 40px;
+      height: 100%;
+      padding: 20px;
+      color: #2A9051;
+      align-self: center;
+}
+
+.nav-logo-mobile {
+   display: block;
+   width: 150px;
+   align-self: center;
+   padding: 20px;
+}
+
+.nav-logo-menu {
+   width: 250px;
+   padding: 0px 0px 50px 30px;
+}
+
+   .hero-content {
+      flex-direction: column;
+      justify-content: center;
+   }   
+
+   .hero-content-text {
+      padding: 0px;
+   }
+
+   .hero-content-text h1{
+      font-size: 3.7em;
+      padding-top: 70px;
+   }
+   
+   .hero-content-text h3 {
+      font-size: 2.2em;
+      
+   }
+   
+   .hero-content-text p {
+      font-size: 1.4em;
+   }
+
+   .hero-img {
+      padding-top: 0px;
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+   }
+   
+   .hero-img img {
+      width: 100%;
+     
+   }
+/**************************************************/
+.features {
+   height: 102vh;
+}
+    .features-content {
+       flex-direction: column;
+    }
+
+    .features-content div {
+      margin: 20px 150px;
+    }
+
+    .features-security, .features-notifications, .features-control {
+      background-color: white;
+      padding: 30px;
+   }
+
+/**************************************************/
+
+.product {
+   height: 170vh
+}
+
+.product p {
+   font-size: 1.3em;
+   font-weight: 100;
+   text-align: center;
+}
+
+.product-content {
+   flex-direction: column;
+}
+
+.product-content div {
+   margin: 20px 150px;
+
+}
+
+.product-camera, .product-securitylights, .product-doorbell {
+   background-color: white;
+   padding: 50px;
+}
+
+.product-camera img {
+   width: 140px;
+   padding-bottom: 10px;
+}
+
+.product-securitylights img {
+   width: 190px;
+   padding-bottom: 10px;
+}
+
+.product-doorbell img {
+   width: 110px;
+   padding-bottom: 10px;
+}
+
+.product a {
+      background-color: #2A9051;
+      color: white;
+      text-decoration: none;
+      padding: 9px 40px;
+      font-size: 1em;
+      font-weight: lighter;
+      box-shadow: 5px 8px 6px -6px #4F4A4A;
+
+}
+
+.product  a:hover {
+   background-color: #4F4A4A;
+}
+
+
+
+/**************************************************/
+
+
+.app {
+   height: 80vh;
+}
+
+.app-content {
+   flex-direction: column;
+}
+
+.mockup {
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   width: 50%;
+   padding-top: 8%;
+}
+
+.app-text {
+   padding-top: 2%;
+}
+
+
+
+
+
+/**************************************************/
+
+
+.subscription {
+   height: 140vh;
+}
+
+.subscription-content {
+flex-direction: column;
+}
+
+.subscription-smart, .subscription-premiere, .subscription-elite {
+margin: 40px 280px ;
+}
+
+
+
+
+
+
+
+/**************************************************/
+
+.support {
+   height: 100vh;
+
+}
+
+.support-aspects {
+   flex-direction: column;
+   margin: 0px 200px;
+}
+
+.support-aspects div {
+   width: 80%;
+}
+
+.support-demos img {
+   width: 70%;
+}
+
+.support .fas {
+   padding: 120px 100px;
+}
+
+
+.support-links {
+   padding-top: 20px;
+}
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 600px) {
+   .nav-mobile {
+      display: block;
+      padding: 0px 20px;
+   }
+
+   .overlay a {
+      font-size: 1.5em;
+    }
+
+    .nav-logo-menu {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 150px;
+      /* align-self: center; */
+      /* padding: 20px; */
+   }
+
+   .nav-desktop{
+      display: none;
+   }
+
+   span {
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+    
+  }
+
+  .fas {
+      font-size: 40px;
+      height: 100%;
+      padding: 20px;
+      color: #2A9051;
+      align-self: center;
+}
+
+   .hero-content {
+      flex-direction: column;
+      justify-content: center;
+   }   
+
+   .hero-content-text {
+      padding: 0px;
+   }
+
+   .hero-content-text h1{
+      font-size: 2em;
+      padding-top: 20px;
+      padding-bottom: 0px;
+   }
+   
+   .hero-content-text h3 {
+      font-size: 1.5em;
+      padding-bottom: 0px;
+
+   }
+   
+   .hero-content-text p {
+      font-size: 1em;
+   }
+
+   .hero-img {
+      padding-top: 50px;
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+   }
+   
+   .hero-img img {
+      width: 100%;
+   }
+
+   .hero-content-text{
+      margin: 0px 30px;
+   }
+
+   .hero-content h1 {
+      font-size: 1.6em;
+      padding-top: 10px;
+   }
+
+   .hero-content h3 {
+      font-size: 1.1em;
+      padding-top: 10px;
+   }
+
+   .hero-content p {
+      font-size: .8em;
+      padding-top: 10px;
+   }
+   
+   .hero-buttons div {
+   margin: 0px 30px;
+   }
+   
+   .hero-buttons a {
+      background-color: #2A9051;
+      color: white;
+      text-decoration: none;
+      padding: 10px 30px;
+      font-size: .8em;
+      font-weight: lighter;
+   }
+
+
+   /**************************************************/
+.features {
+   height: 150vh;
+}
+
+.features h1 {
+   font-size: 1.6em;
+   padding-top: 60px;
+}
+
+.features h2 {
+   font-size: 1.3em;
+   padding-top: 20px;
+
+}
+
+.features p {
+   font-size: .8em;
+   padding-top: 20px;
+
+}
+
+.features img {
+   width: 70px;
+}
+    .features-content {
+       flex-direction: column;
+       margin: 10px 70px;
+    }
+
+     .features-content div {
+      margin: 20px 0px;
+    } 
+
+    .features-security, .features-notifications, .features-control {
+      padding: 20px;
+      margin: 0px;
+   }
+
+/**************************************************/
+
+.product {
+   height: 220vh;
+}
+
+.product h1 {
+   font-size: 1.6em;
+   padding-top: 60px;
+}
+
+.product h2 {
+   font-size: 1.3em;
+   padding-top: 20px;
+
+}
+
+.product p {
+   font-size: 1em;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.product-content {
+       flex-direction: column;
+       margin: 10px 70px;
+    }
+
+    .product-content div {
+      margin: 20px 0px;
+    } 
+
+    .product-camera, .product-securitylights, .product-doorbell {
+      padding: 40px;
+      margin: 0px;
+   }
+
+   .product-camera p, .product-securitylights p, .product-doorbell p {
+      font-size: .8em;
+   }
+
+
+.product-camera img {
+   width: 100px;
+}
+
+.product-securitylights img {
+   width: 150px;
+}
+
+.product-doorbell img {
+   width: 70px;
+}
+
+.product a {
+      padding: 9px 40px;
+      font-size: .8em;
+
+}
+
+
+
+
+
+/**************************************************/
+
+
+
+.app {
+   height: 90vh;
+}
+
+.app h1 {
+   font-size: 1.6em;
+   padding: 30px 0px 0px 0px;
+}
+
+.app h3 {
+   font-size: 1.3em;
+   padding: 10px 0px 0px 0px;
+
+}
+
+.app p {
+   font-size: 1em;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.app-content {
+   flex-direction: column;
+}
+
+.mockup {
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   width: 50%;
+   padding-top: 15%;
+}
+
+.app-text {
+   padding-top: 2%;
+}
+
+
+.app-buttons {
+   padding: 20px;
+}
+
+.app-buttons-google {
+   width: 40%;
+}
+
+.app-buttons-apple {
+   width: 34%;
+   padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+/**************************************************/
+
+
+
+
+
+.subscription {
+   height: 200vh;
+}
+
+.subscription h1 {
+   font-size: 1.6em;
+   padding-top: 60px;
+}
+
+.subscription-content div {
+   padding: 30px;
+}
+
+.subscription h4{
+   font-size: 1em;
+   /* padding-top: 20px; */
+   padding-bottom: 20px;
+}
+
+.subscription h2 {
+   font-size: 1em;
+   font-weight: lighter;
+}
+
+
+.subscription-smart h2,
+.subscription-premiere h2,
+.subscription-elite h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.subscription-premiere p,
+.subscription-elite p {
+    padding-bottom: 20px;
+
+}
+
+.subscription-smart p {
+    padding-bottom: 20px;
+
+}
+
+.subscription a {
+   /* margin-top: 40px; */
+   padding: 9px 40px;
+   font-size: .8em;
+   font-weight: lighter;
+   box-shadow: 5px 8px 6px -6px #4F4A4A;
+}
+
+
+
+.subscription img {
+   width: 70px;
+}
+.subscription-content {
+       flex-direction: column;
+       margin: 10px 70px;
+    }
+
+    .subscription-content div {
+      margin: 20px 0px;
+    } 
+
+
+
+
+
+
+/**************************************************/
+
+
+.support {
+   height: 160vh;
+}
+
+.support h1 {
+   padding-top: 60px;
+   font-size: 1.6em;
+   font-weight: lighter;
+   /* margin: */
+   padding-bottom: 40px;
+}
+
+.support p {
+   font-size: 1em;
+   font-weight: 100;
+   /* padding-bottom: 60px;  */
+  padding: 0px 30px 40px 30px;
+
+}
+
+.support h2 {
+   font-size: 1em;
+}
+
+.support-aspects {
+   flex-direction: column;
+   margin: 0px 20px;
+}
+
+.support-aspects div {
+   width: 80%;
+   margin: 30px;
+}
+
+.support-demos img {
+   width: 90%;
+}
+
+.support .fas {
+   padding: 80px 60px;
+}
+
+
+.support-links {
+   padding-top: 10px;
+   flex-direction: column;
+}
+
+.support-links-centers {
+   padding: 0;
+}
+
+.support-links h3{
+   font-size: 1em;
+}
+
+.support-links-centers a {
+   padding: 5px 10px 0px 10px;
+   font-size: .8em;
+
+}
+
+   .support-faq h3 {
+       font-size: 1em;
+       font-weight: 300;
+       padding-bottom: 10px;
+       padding-top: 30px;
+       
+   }
+
+   .support-faq h4 {
+       font-weight: 100;
+       margin-bottom: 35px; 
+       padding-bottom: 10px;
+       font-size: .8em;
+
+   }
+
+  .support-aspects a {
+          font-size: .8em;
+      }
+
+/**************************************************/
+
+   footer  {
+       flex-direction: column;
+       padding: 20px;
+
+   }
+
+   footer p {
+       color: white;
+       padding-top: 20px;
+       font-size: .7em;
+       text-align: center;
+   }
+
+
+
+   .footer-content-icons {
+       justify-content: center;
+       padding-top: 20px;
+   }
+
+
+ }
